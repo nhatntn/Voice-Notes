@@ -1,0 +1,6 @@
+framework module Pods_VoiceNotesTests {
+  umbrella header "Pods-VoiceNotesTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

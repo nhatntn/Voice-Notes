@@ -1,0 +1,229 @@
+PODS:
+  - "!ProtoCompiler (3.11.2)":
+    - Protobuf (~> 3.0)
+  - "!ProtoCompiler-gRPCPlugin (1.29.1)":
+    - "!ProtoCompiler (= 3.11.2)"
+    - gRPC-ProtoRPC (= 1.29.1)
+  - abseil/algorithm/algorithm (1.20200225.0):
+    - abseil/base/config
+  - abseil/base/atomic_hook (1.20200225.0):
+    - abseil/base/config
+    - abseil/base/core_headers
+  - abseil/base/base (1.20200225.0):
+    - abseil/base/atomic_hook
+    - abseil/base/base_internal
+    - abseil/base/config
+    - abseil/base/core_headers
+    - abseil/base/dynamic_annotations
+    - abseil/base/log_severity
+    - abseil/base/raw_logging_internal
+    - abseil/base/spinlock_wait
+    - abseil/meta/type_traits
+  - abseil/base/base_internal (1.20200225.0):
+    - abseil/base/config
+    - abseil/meta/type_traits
+  - abseil/base/bits (1.20200225.0):
+    - abseil/base/config
+    - abseil/base/core_headers
+  - abseil/base/config (1.20200225.0)
+  - abseil/base/core_headers (1.20200225.0):
+    - abseil/base/config
+  - abseil/base/dynamic_annotations (1.20200225.0)
+  - abseil/base/endian (1.20200225.0):
+    - abseil/base/config
+    - abseil/base/core_headers
+  - abseil/base/errno_saver (1.20200225.0):
+    - abseil/base/config
+  - abseil/base/log_severity (1.20200225.0):
+    - abseil/base/config
+    - abseil/base/core_headers
+  - abseil/base/raw_logging_internal (1.20200225.0):
+    - abseil/base/atomic_hook
+    - abseil/base/config
+    - abseil/base/core_headers
+    - abseil/base/log_severity
+  - abseil/base/spinlock_wait (1.20200225.0):
+    - abseil/base/base_internal
+    - abseil/base/core_headers
+    - abseil/base/errno_saver
+  - abseil/base/throw_delegate (1.20200225.0):
+    - abseil/base/config
+    - abseil/base/raw_logging_internal
+  - abseil/container/compressed_tuple (1.20200225.0):
+    - abseil/utility/utility
+  - abseil/container/inlined_vector (1.20200225.0):
+    - abseil/algorithm/algorithm
+    - abseil/base/core_headers
+    - abseil/base/throw_delegate
+    - abseil/container/inlined_vector_internal
+    - abseil/memory/memory
+  - abseil/container/inlined_vector_internal (1.20200225.0):
+    - abseil/base/core_headers
+    - abseil/container/compressed_tuple
+    - abseil/memory/memory
+    - abseil/meta/type_traits
+    - abseil/types/span
+  - abseil/memory/memory (1.20200225.0):
+    - abseil/base/core_headers
+    - abseil/meta/type_traits
+  - abseil/meta/type_traits (1.20200225.0):
+    - abseil/base/config
+  - abseil/numeric/int128 (1.20200225.0):
+    - abseil/base/config
+    - abseil/base/core_headers
+  - abseil/strings/internal (1.20200225.0):
+    - abseil/base/config
+    - abseil/base/core_headers
+    - abseil/base/endian
+    - abseil/base/raw_logging_internal
+    - abseil/meta/type_traits
+  - abseil/strings/str_format (1.20200225.0):
+    - abseil/strings/str_format_internal
+  - abseil/strings/str_format_internal (1.20200225.0):
+    - abseil/base/config
+    - abseil/base/core_headers
+    - abseil/meta/type_traits
+    - abseil/numeric/int128
+    - abseil/strings/strings
+    - abseil/types/span
+  - abseil/strings/strings (1.20200225.0):
+    - abseil/base/base
+    - abseil/base/bits
+    - abseil/base/config
+    - abseil/base/core_headers
+    - abseil/base/endian
+    - abseil/base/raw_logging_internal
+    - abseil/base/throw_delegate
+    - abseil/memory/memory
+    - abseil/meta/type_traits
+    - abseil/numeric/int128
+    - abseil/strings/internal
+  - abseil/time/internal/cctz/civil_time (1.20200225.0):
+    - abseil/base/config
+  - abseil/time/internal/cctz/time_zone (1.20200225.0):
+    - abseil/base/config
+    - abseil/time/internal/cctz/civil_time
+  - abseil/time/time (1.20200225.0):
+    - abseil/base/base
+    - abseil/base/core_headers
+    - abseil/base/raw_logging_internal
+    - abseil/numeric/int128
+    - abseil/strings/strings
+    - abseil/time/internal/cctz/civil_time
+    - abseil/time/internal/cctz/time_zone
+  - abseil/types/bad_optional_access (1.20200225.0):
+    - abseil/base/config
+    - abseil/base/raw_logging_internal
+  - abseil/types/optional (1.20200225.0):
+    - abseil/base/base_internal
+    - abseil/base/config
+    - abseil/base/core_headers
+    - abseil/memory/memory
+    - abseil/meta/type_traits
+    - abseil/types/bad_optional_access
+    - abseil/utility/utility
+  - abseil/types/span (1.20200225.0):
+    - abseil/algorithm/algorithm
+    - abseil/base/core_headers
+    - abseil/base/throw_delegate
+    - abseil/meta/type_traits
+  - abseil/utility/utility (1.20200225.0):
+    - abseil/base/base_internal
+    - abseil/base/config
+    - abseil/meta/type_traits
+  - BoringSSL-GRPC (0.0.8):
+    - BoringSSL-GRPC/Implementation (= 0.0.8)
+    - BoringSSL-GRPC/Interface (= 0.0.8)
+  - BoringSSL-GRPC/Implementation (0.0.8):
+    - BoringSSL-GRPC/Interface (= 0.0.8)
+  - BoringSSL-GRPC/Interface (0.0.8)
+  - googleapis (0.0.1):
+    - "!ProtoCompiler-gRPCPlugin (~> 1.29.0)"
+    - googleapis/Messages (= 0.0.1)
+    - googleapis/Services (= 0.0.1)
+  - googleapis/Messages (0.0.1):
+    - "!ProtoCompiler-gRPCPlugin (~> 1.29.0)"
+    - Protobuf
+  - googleapis/Services (0.0.1):
+    - "!ProtoCompiler-gRPCPlugin (~> 1.29.0)"
+    - googleapis/Messages
+    - gRPC-ProtoRPC
+  - gRPC-Core (1.29.1):
+    - gRPC-Core/Implementation (= 1.29.1)
+    - gRPC-Core/Interface (= 1.29.1)
+  - gRPC-Core/Implementation (1.29.1):
+    - abseil/container/inlined_vector (= 1.20200225.0)
+    - abseil/memory/memory (= 1.20200225.0)
+    - abseil/strings/str_format (= 1.20200225.0)
+    - abseil/strings/strings (= 1.20200225.0)
+    - abseil/time/time (= 1.20200225.0)
+    - abseil/types/optional (= 1.20200225.0)
+    - BoringSSL-GRPC (= 0.0.8)
+    - gRPC-Core/Interface (= 1.29.1)
+  - gRPC-Core/Interface (1.29.1)
+  - gRPC-ProtoRPC (1.29.1):
+    - gRPC-ProtoRPC/Legacy (= 1.29.1)
+    - gRPC-ProtoRPC/Legacy-Header (= 1.29.1)
+    - gRPC-ProtoRPC/Main (= 1.29.1)
+  - gRPC-ProtoRPC/Legacy (1.29.1):
+    - gRPC-ProtoRPC/Legacy-Header (= 1.29.1)
+    - gRPC-ProtoRPC/Main (= 1.29.1)
+    - gRPC-RxLibrary (= 1.29.1)
+    - gRPC/GRPCCore (= 1.29.1)
+    - Protobuf (~> 3.0)
+  - gRPC-ProtoRPC/Legacy-Header (1.29.1)
+  - gRPC-ProtoRPC/Main (1.29.1):
+    - gRPC-ProtoRPC/Legacy-Header (= 1.29.1)
+    - gRPC/Interface (= 1.29.1)
+    - Protobuf (~> 3.0)
+  - gRPC-RxLibrary (1.29.1):
+    - gRPC-RxLibrary/Implementation (= 1.29.1)
+    - gRPC-RxLibrary/Interface (= 1.29.1)
+  - gRPC-RxLibrary/Implementation (1.29.1):
+    - gRPC-RxLibrary/Interface
+  - gRPC-RxLibrary/Interface (1.29.1)
+  - gRPC/GRPCCore (1.29.1):
+    - gRPC-Core (= 1.29.1)
+    - gRPC-RxLibrary (= 1.29.1)
+    - gRPC/Interface (= 1.29.1)
+    - gRPC/Interface-Legacy (= 1.29.1)
+  - gRPC/Interface (1.29.1):
+    - gRPC/Interface-Legacy (= 1.29.1)
+  - gRPC/Interface-Legacy (1.29.1):
+    - gRPC-RxLibrary/Interface (= 1.29.1)
+  - Protobuf (3.21.1)
+
+DEPENDENCIES:
+  - googleapis (from `.`)
+
+SPEC REPOS:
+  trunk:
+    - "!ProtoCompiler"
+    - "!ProtoCompiler-gRPCPlugin"
+    - abseil
+    - BoringSSL-GRPC
+    - gRPC
+    - gRPC-Core
+    - gRPC-ProtoRPC
+    - gRPC-RxLibrary
+    - Protobuf
+
+EXTERNAL SOURCES:
+  googleapis:
+    :path: "."
+
+SPEC CHECKSUMS:
+  "!ProtoCompiler": da24805d8339f352ec7bb4cb4df2db6a3be45665
+  "!ProtoCompiler-gRPCPlugin": 17cee45baa624890d5ddde377738cb7334c4ab91
+  abseil: 4fcdce446caa49368e0f5ba328cff93326c72a49
+  BoringSSL-GRPC: dc87c4246f7bdbcda6204ecd746129817f8024b0
+  googleapis: 52ce02d3ebb4a4f15df4039ff2592c14fdc17412
+  gRPC: 1e7510b974e7ae0e61ebb4aa2d7d5b9d0fa5b6d7
+  gRPC-Core: 8a845f4b63db8951ab3de73d638f2e3c3eb06e25
+  gRPC-ProtoRPC: c556de48e1ad86da9cca88bef5919142dfa91570
+  gRPC-RxLibrary: efeb53e4202175550d8f1d8c98991e053d0cf17e
+  Protobuf: 9e88c1e667d75aa2491d211f26ccddde4e8ad4cf
+
+PODFILE CHECKSUM: dea08be48812961d4c67b7a03e09b2fe6cb6560f
+
+COCOAPODS: 1.11.3

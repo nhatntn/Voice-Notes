@@ -1,0 +1,1000 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		18FAF1F0A9C8EECC34D1FC08 /* Pods_VoiceNotes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2462782E812DCFE36A1AD79F /* Pods_VoiceNotes.framework */; };
+		B18C763D284111C500D1E688 /* SpeechToTextService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18C763C284111C500D1E688 /* SpeechToTextService.swift */; };
+		B18C76682841298000D1E688 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18C76672841298000D1E688 /* AppCoordinator.swift */; };
+		B18C767028412C3B00D1E688 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18C766F28412C3B00D1E688 /* HomeCoordinator.swift */; };
+		B18C767A28412DBC00D1E688 /* SpeechToTextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18C767928412DBC00D1E688 /* SpeechToTextViewController.swift */; };
+		B18C768028412DD000D1E688 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18C767F28412DD000D1E688 /* HomeViewController.swift */; };
+		B18C76E22841585900D1E688 /* RecognitionConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18C76E12841585900D1E688 /* RecognitionConfig.swift */; };
+		B18C76ED2841E47D00D1E688 /* SpeechToTextViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B18C76EC2841E47D00D1E688 /* SpeechToTextViewController.storyboard */; };
+		B18C76F32841E84100D1E688 /* StoryboardInstantiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18C76F22841E84100D1E688 /* StoryboardInstantiable.swift */; };
+		B18C76FC2842070800D1E688 /* AudioService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18C76FB2842070800D1E688 /* AudioService.swift */; };
+		B18C772428424C2500D1E688 /* SpeechToTextViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18C772328424C2500D1E688 /* SpeechToTextViewModel.swift */; };
+		B18C772A28424D5400D1E688 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18C772928424D5400D1E688 /* Repository.swift */; };
+		B18C772F28424F8500D1E688 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18C772E28424F8500D1E688 /* Observable.swift */; };
+		B18C773428425CA400D1E688 /* DefaultSpeechToTextRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18C773328425CA400D1E688 /* DefaultSpeechToTextRepository.swift */; };
+		B18C773928425CB100D1E688 /* DefaultAudioRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18C773828425CB100D1E688 /* DefaultAudioRepository.swift */; };
+		B18C774328434DC900D1E688 /* CoreDataStorage.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B18C774128434DC900D1E688 /* CoreDataStorage.xcdatamodeld */; };
+		B18C774828434E5100D1E688 /* VoiceNotesStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18C774728434E5100D1E688 /* VoiceNotesStorage.swift */; };
+		B18C774D28434E9E00D1E688 /* CoreDataStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18C774C28434E9E00D1E688 /* CoreDataStorage.swift */; };
+		B18C775C2843515300D1E688 /* CoreDataVoiceNotesStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18C775B2843515300D1E688 /* CoreDataVoiceNotesStorage.swift */; };
+		B18C7765284351D200D1E688 /* VoiceNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18C7764284351D200D1E688 /* VoiceNote.swift */; };
+		B18C776D2843541C00D1E688 /* VoiceNoteEntity+Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18C776C2843541C00D1E688 /* VoiceNoteEntity+Mapping.swift */; };
+		B18C777428438B2F00D1E688 /* HomeItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18C777328438B2F00D1E688 /* HomeItemViewModel.swift */; };
+		B18C777C2843913100D1E688 /* HomeListItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18C777B2843913100D1E688 /* HomeListItemCell.swift */; };
+		B18C77842843941C00D1E688 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18C77832843941C00D1E688 /* HomeViewModel.swift */; };
+		B1B6329D2843B12D000C66EC /* TextToSpeechService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B6329C2843B12D000C66EC /* TextToSpeechService.swift */; };
+		B1B632A52843B2B2000C66EC /* DefaultTextToSpeechRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B632A42843B2B2000C66EC /* DefaultTextToSpeechRepository.swift */; };
+		B1B632B12843B4C8000C66EC /* VoiceNoteDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B632B02843B4C8000C66EC /* VoiceNoteDetailViewModel.swift */; };
+		B1B632B62843B790000C66EC /* VoiceNoteDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B632B52843B790000C66EC /* VoiceNoteDetailViewController.swift */; };
+		B1B632BB2843B829000C66EC /* VoiceNoteDetailViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1B632BA2843B829000C66EC /* VoiceNoteDetailViewController.storyboard */; };
+		B1B632DF2843E575000C66EC /* AppConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1FDE6482840D60B00320E41 /* AppConfiguration.swift */; };
+		B1B632EA2843E57C000C66EC /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18C77832843941C00D1E688 /* HomeViewModel.swift */; };
+		B1B632EB2843E57C000C66EC /* HomeItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18C777328438B2F00D1E688 /* HomeItemViewModel.swift */; };
+		B1B632F52843E584000C66EC /* VoiceNoteDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B632B02843B4C8000C66EC /* VoiceNoteDetailViewModel.swift */; };
+		B1B632F92843E58B000C66EC /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18C772928424D5400D1E688 /* Repository.swift */; };
+		B1B632FA2843E58B000C66EC /* VoiceNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18C7764284351D200D1E688 /* VoiceNote.swift */; };
+		B1B632FF2843E593000C66EC /* DefaultTextToSpeechRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B632A42843B2B2000C66EC /* DefaultTextToSpeechRepository.swift */; };
+		B1B633012843E593000C66EC /* CoreDataStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18C774C28434E9E00D1E688 /* CoreDataStorage.swift */; };
+		B1B633022843E593000C66EC /* DefaultSpeechToTextRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18C773328425CA400D1E688 /* DefaultSpeechToTextRepository.swift */; };
+		B1B633042843E593000C66EC /* VoiceNotesStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18C774728434E5100D1E688 /* VoiceNotesStorage.swift */; };
+		B1B633082843E59A000C66EC /* RecognitionConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18C76E12841585900D1E688 /* RecognitionConfig.swift */; };
+		B1B633092843E59A000C66EC /* TextToSpeechService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B6329C2843B12D000C66EC /* TextToSpeechService.swift */; };
+		B1B6330B2843E59A000C66EC /* AudioService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18C76FB2842070800D1E688 /* AudioService.swift */; };
+		B1B633102843E59E000C66EC /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18C772E28424F8500D1E688 /* Observable.swift */; };
+		B1B633272843E7B2000C66EC /* SpeechToTextRepositoryMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B633262843E7B2000C66EC /* SpeechToTextRepositoryMock.swift */; };
+		B1B633552843EE10000C66EC /* SpeechToTextService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18C763C284111C500D1E688 /* SpeechToTextService.swift */; };
+		B1B6335D2843F5FE000C66EC /* HomeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B6335C2843F5FE000C66EC /* HomeViewModelTests.swift */; };
+		B1B6336E2843F721000C66EC /* VoiceNoteDetailViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B6336D2843F721000C66EC /* VoiceNoteDetailViewModelTests.swift */; };
+		B1B633732843F78E000C66EC /* TextToSpeechRepositoryMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B633722843F78E000C66EC /* TextToSpeechRepositoryMock.swift */; };
+		B1B633782843FB31000C66EC /* SpeechToTextViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B633772843FB31000C66EC /* SpeechToTextViewModelTests.swift */; };
+		B1B6337C2843FBA6000C66EC /* SpeechToTextViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18C772328424C2500D1E688 /* SpeechToTextViewModel.swift */; };
+		B1FDE6122840D4C500320E41 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1FDE6112840D4C500320E41 /* AppDelegate.swift */; };
+		B1FDE6192840D4C500320E41 /* HomeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1FDE6172840D4C500320E41 /* HomeViewController.storyboard */; };
+		B1FDE61B2840D4C700320E41 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1FDE61A2840D4C700320E41 /* Assets.xcassets */; };
+		B1FDE61E2840D4C700320E41 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1FDE61C2840D4C700320E41 /* LaunchScreen.storyboard */; };
+		B1FDE6492840D60B00320E41 /* AppConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1FDE6482840D60B00320E41 /* AppConfiguration.swift */; };
+		C290F9577C23B2E0F5242BC5 /* Pods_VoiceNotesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73C93C269CC412BC06B7B2BD /* Pods_VoiceNotesTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B1FDE6252840D4C700320E41 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B1FDE6062840D4C500320E41 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B1FDE60D2840D4C500320E41;
+			remoteInfo = VoiceNotes;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2462782E812DCFE36A1AD79F /* Pods_VoiceNotes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VoiceNotes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		73C93C269CC412BC06B7B2BD /* Pods_VoiceNotesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VoiceNotesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E141F2BC3130DB91167C67F /* Pods-VoiceNotes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VoiceNotes.debug.xcconfig"; path = "Target Support Files/Pods-VoiceNotes/Pods-VoiceNotes.debug.xcconfig"; sourceTree = "<group>"; };
+		B18C762328410EF100D1E688 /* VoiceNotes-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VoiceNotes-Bridging-Header.h"; sourceTree = "<group>"; };
+		B18C763C284111C500D1E688 /* SpeechToTextService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechToTextService.swift; sourceTree = "<group>"; };
+		B18C76672841298000D1E688 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		B18C766F28412C3B00D1E688 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
+		B18C767928412DBC00D1E688 /* SpeechToTextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechToTextViewController.swift; sourceTree = "<group>"; };
+		B18C767F28412DD000D1E688 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		B18C76E12841585900D1E688 /* RecognitionConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecognitionConfig.swift; sourceTree = "<group>"; };
+		B18C76EC2841E47D00D1E688 /* SpeechToTextViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SpeechToTextViewController.storyboard; sourceTree = "<group>"; };
+		B18C76F22841E84100D1E688 /* StoryboardInstantiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardInstantiable.swift; sourceTree = "<group>"; };
+		B18C76FB2842070800D1E688 /* AudioService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioService.swift; sourceTree = "<group>"; };
+		B18C772328424C2500D1E688 /* SpeechToTextViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechToTextViewModel.swift; sourceTree = "<group>"; };
+		B18C772928424D5400D1E688 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		B18C772E28424F8500D1E688 /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
+		B18C773328425CA400D1E688 /* DefaultSpeechToTextRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultSpeechToTextRepository.swift; sourceTree = "<group>"; };
+		B18C773828425CB100D1E688 /* DefaultAudioRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultAudioRepository.swift; sourceTree = "<group>"; };
+		B18C774228434DC900D1E688 /* VoiceNotes.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = VoiceNotes.xcdatamodel; sourceTree = "<group>"; };
+		B18C774728434E5100D1E688 /* VoiceNotesStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceNotesStorage.swift; sourceTree = "<group>"; };
+		B18C774C28434E9E00D1E688 /* CoreDataStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStorage.swift; sourceTree = "<group>"; };
+		B18C775B2843515300D1E688 /* CoreDataVoiceNotesStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataVoiceNotesStorage.swift; sourceTree = "<group>"; };
+		B18C7764284351D200D1E688 /* VoiceNote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceNote.swift; sourceTree = "<group>"; };
+		B18C776C2843541C00D1E688 /* VoiceNoteEntity+Mapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VoiceNoteEntity+Mapping.swift"; sourceTree = "<group>"; };
+		B18C777328438B2F00D1E688 /* HomeItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeItemViewModel.swift; sourceTree = "<group>"; };
+		B18C777B2843913100D1E688 /* HomeListItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeListItemCell.swift; sourceTree = "<group>"; };
+		B18C77832843941C00D1E688 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		B1B6329C2843B12D000C66EC /* TextToSpeechService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextToSpeechService.swift; sourceTree = "<group>"; };
+		B1B632A42843B2B2000C66EC /* DefaultTextToSpeechRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultTextToSpeechRepository.swift; sourceTree = "<group>"; };
+		B1B632B02843B4C8000C66EC /* VoiceNoteDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceNoteDetailViewModel.swift; sourceTree = "<group>"; };
+		B1B632B52843B790000C66EC /* VoiceNoteDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceNoteDetailViewController.swift; sourceTree = "<group>"; };
+		B1B632BA2843B829000C66EC /* VoiceNoteDetailViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = VoiceNoteDetailViewController.storyboard; sourceTree = "<group>"; };
+		B1B633262843E7B2000C66EC /* SpeechToTextRepositoryMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechToTextRepositoryMock.swift; sourceTree = "<group>"; };
+		B1B6335C2843F5FE000C66EC /* HomeViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewModelTests.swift; sourceTree = "<group>"; };
+		B1B6336D2843F721000C66EC /* VoiceNoteDetailViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceNoteDetailViewModelTests.swift; sourceTree = "<group>"; };
+		B1B633722843F78E000C66EC /* TextToSpeechRepositoryMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextToSpeechRepositoryMock.swift; sourceTree = "<group>"; };
+		B1B633772843FB31000C66EC /* SpeechToTextViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechToTextViewModelTests.swift; sourceTree = "<group>"; };
+		B1FDE60E2840D4C500320E41 /* VoiceNotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VoiceNotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1FDE6112840D4C500320E41 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B1FDE6182840D4C500320E41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/HomeViewController.storyboard; sourceTree = "<group>"; };
+		B1FDE61A2840D4C700320E41 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B1FDE61D2840D4C700320E41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B1FDE61F2840D4C700320E41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B1FDE6242840D4C700320E41 /* VoiceNotesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VoiceNotesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1FDE62A2840D4C700320E41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B1FDE6332840D4C700320E41 /* VoiceNotesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceNotesUITests.swift; sourceTree = "<group>"; };
+		B1FDE6352840D4C700320E41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B1FDE6482840D60B00320E41 /* AppConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfiguration.swift; sourceTree = "<group>"; };
+		E8923770DF7A2B8ACD01E3B7 /* Pods-VoiceNotes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VoiceNotes.release.xcconfig"; path = "Target Support Files/Pods-VoiceNotes/Pods-VoiceNotes.release.xcconfig"; sourceTree = "<group>"; };
+		EE43ED32E84DBBD3495A9C86 /* Pods-VoiceNotesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VoiceNotesTests.debug.xcconfig"; path = "Target Support Files/Pods-VoiceNotesTests/Pods-VoiceNotesTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F77443AE782E08172A7092D4 /* Pods-VoiceNotesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VoiceNotesTests.release.xcconfig"; path = "Target Support Files/Pods-VoiceNotesTests/Pods-VoiceNotesTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B1FDE60B2840D4C500320E41 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18FAF1F0A9C8EECC34D1FC08 /* Pods_VoiceNotes.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1FDE6212840D4C700320E41 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C290F9577C23B2E0F5242BC5 /* Pods_VoiceNotesTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2DF359F6C86BDD18E90AE52F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2462782E812DCFE36A1AD79F /* Pods_VoiceNotes.framework */,
+				73C93C269CC412BC06B7B2BD /* Pods_VoiceNotesTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7AF8E7F1233AC585BACE48F5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9E141F2BC3130DB91167C67F /* Pods-VoiceNotes.debug.xcconfig */,
+				E8923770DF7A2B8ACD01E3B7 /* Pods-VoiceNotes.release.xcconfig */,
+				EE43ED32E84DBBD3495A9C86 /* Pods-VoiceNotesTests.debug.xcconfig */,
+				F77443AE782E08172A7092D4 /* Pods-VoiceNotesTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B18C76612841266000D1E688 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				B18C7763284351C100D1E688 /* Entities */,
+				B18C772828424D3900D1E688 /* Interfaces */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		B18C76622841267B00D1E688 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				B18C767E28412DC700D1E688 /* Home */,
+				B18C767728412DA000D1E688 /* SpeechToText */,
+				B1B632AD2843B467000C66EC /* VoiceNoteDetail */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		B18C76642841269A00D1E688 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B1FDE61A2840D4C700320E41 /* Assets.xcassets */,
+				B1FDE61C2840D4C700320E41 /* LaunchScreen.storyboard */,
+				B1FDE61F2840D4C700320E41 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B18C7665284126EE00D1E688 /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				B18C76FA284206EF00D1E688 /* AudioService */,
+				B18C76662841270800D1E688 /* RecognitionService */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		B18C76662841270800D1E688 /* RecognitionService */ = {
+			isa = PBXGroup;
+			children = (
+				B18C76E12841585900D1E688 /* RecognitionConfig.swift */,
+				B18C763C284111C500D1E688 /* SpeechToTextService.swift */,
+				B1B6329C2843B12D000C66EC /* TextToSpeechService.swift */,
+			);
+			path = RecognitionService;
+			sourceTree = "<group>";
+		};
+		B18C767728412DA000D1E688 /* SpeechToText */ = {
+			isa = PBXGroup;
+			children = (
+				B18C767828412DAD00D1E688 /* View */,
+				B18C772228424C0100D1E688 /* ViewModel */,
+			);
+			path = SpeechToText;
+			sourceTree = "<group>";
+		};
+		B18C767828412DAD00D1E688 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B18C767928412DBC00D1E688 /* SpeechToTextViewController.swift */,
+				B18C76EC2841E47D00D1E688 /* SpeechToTextViewController.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B18C767E28412DC700D1E688 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				B18C777128438AF700D1E688 /* View */,
+				B18C777228438B0100D1E688 /* ViewModel */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		B18C76F12841E81F00D1E688 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				B18C772E28424F8500D1E688 /* Observable.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		B18C76FA284206EF00D1E688 /* AudioService */ = {
+			isa = PBXGroup;
+			children = (
+				B18C76FB2842070800D1E688 /* AudioService.swift */,
+			);
+			path = AudioService;
+			sourceTree = "<group>";
+		};
+		B18C77032842076200D1E688 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				B18C76F22841E84100D1E688 /* StoryboardInstantiable.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		B18C772228424C0100D1E688 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B18C772328424C2500D1E688 /* SpeechToTextViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B18C772828424D3900D1E688 /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				B18C772928424D5400D1E688 /* Repository.swift */,
+			);
+			path = Interfaces;
+			sourceTree = "<group>";
+		};
+		B18C773D28434CE300D1E688 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				B18C773F28434D7700D1E688 /* PersistentStorages */,
+				B18C773E28434CEC00D1E688 /* Repositories */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		B18C773E28434CEC00D1E688 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				B18C773328425CA400D1E688 /* DefaultSpeechToTextRepository.swift */,
+				B1B632A42843B2B2000C66EC /* DefaultTextToSpeechRepository.swift */,
+				B18C773828425CB100D1E688 /* DefaultAudioRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		B18C773F28434D7700D1E688 /* PersistentStorages */ = {
+			isa = PBXGroup;
+			children = (
+				B18C77582843511900D1E688 /* VoiceNotesStorage */,
+				B18C774028434D8B00D1E688 /* CoreDataStorage */,
+			);
+			path = PersistentStorages;
+			sourceTree = "<group>";
+		};
+		B18C774028434D8B00D1E688 /* CoreDataStorage */ = {
+			isa = PBXGroup;
+			children = (
+				B18C774128434DC900D1E688 /* CoreDataStorage.xcdatamodeld */,
+				B18C774C28434E9E00D1E688 /* CoreDataStorage.swift */,
+			);
+			path = CoreDataStorage;
+			sourceTree = "<group>";
+		};
+		B18C77582843511900D1E688 /* VoiceNotesStorage */ = {
+			isa = PBXGroup;
+			children = (
+				B18C774728434E5100D1E688 /* VoiceNotesStorage.swift */,
+				B18C77592843512400D1E688 /* CoreDataStorage */,
+			);
+			path = VoiceNotesStorage;
+			sourceTree = "<group>";
+		};
+		B18C77592843512400D1E688 /* CoreDataStorage */ = {
+			isa = PBXGroup;
+			children = (
+				B18C775B2843515300D1E688 /* CoreDataVoiceNotesStorage.swift */,
+				B18C776C2843541C00D1E688 /* VoiceNoteEntity+Mapping.swift */,
+			);
+			path = CoreDataStorage;
+			sourceTree = "<group>";
+		};
+		B18C7763284351C100D1E688 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				B18C7764284351D200D1E688 /* VoiceNote.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		B18C777128438AF700D1E688 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B18C767F28412DD000D1E688 /* HomeViewController.swift */,
+				B18C777B2843913100D1E688 /* HomeListItemCell.swift */,
+				B1FDE6172840D4C500320E41 /* HomeViewController.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B18C777228438B0100D1E688 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B18C77832843941C00D1E688 /* HomeViewModel.swift */,
+				B18C777328438B2F00D1E688 /* HomeItemViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B1B632AD2843B467000C66EC /* VoiceNoteDetail */ = {
+			isa = PBXGroup;
+			children = (
+				B1B632AF2843B467000C66EC /* View */,
+				B1B632AE2843B467000C66EC /* ViewModel */,
+			);
+			name = VoiceNoteDetail;
+			path = VoiceNotes/Presentation/VoiceNoteDetail;
+			sourceTree = SOURCE_ROOT;
+		};
+		B1B632AE2843B467000C66EC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B1B632B02843B4C8000C66EC /* VoiceNoteDetailViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B1B632AF2843B467000C66EC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B1B632B52843B790000C66EC /* VoiceNoteDetailViewController.swift */,
+				B1B632BA2843B829000C66EC /* VoiceNoteDetailViewController.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B1B633142843E5F2000C66EC /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				B1B6335C2843F5FE000C66EC /* HomeViewModelTests.swift */,
+				B1B6336D2843F721000C66EC /* VoiceNoteDetailViewModelTests.swift */,
+				B1B633772843FB31000C66EC /* SpeechToTextViewModelTests.swift */,
+				B1B633252843E78C000C66EC /* Mocks */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		B1B633252843E78C000C66EC /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				B1B633262843E7B2000C66EC /* SpeechToTextRepositoryMock.swift */,
+				B1B633722843F78E000C66EC /* TextToSpeechRepositoryMock.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		B1FDE6052840D4C500320E41 = {
+			isa = PBXGroup;
+			children = (
+				B1FDE6102840D4C500320E41 /* VoiceNotes */,
+				B1FDE6272840D4C700320E41 /* VoiceNotesTests */,
+				B1FDE6322840D4C700320E41 /* VoiceNotesUITests */,
+				B1FDE60F2840D4C500320E41 /* Products */,
+				7AF8E7F1233AC585BACE48F5 /* Pods */,
+				2DF359F6C86BDD18E90AE52F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B1FDE60F2840D4C500320E41 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B1FDE60E2840D4C500320E41 /* VoiceNotes.app */,
+				B1FDE6242840D4C700320E41 /* VoiceNotesTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B1FDE6102840D4C500320E41 /* VoiceNotes */ = {
+			isa = PBXGroup;
+			children = (
+				B1FDE6472840D5E900320E41 /* Application */,
+				B18C76622841267B00D1E688 /* Presentation */,
+				B18C76612841266000D1E688 /* Domain */,
+				B18C773D28434CE300D1E688 /* Data */,
+				B18C76642841269A00D1E688 /* Resources */,
+				B18C7665284126EE00D1E688 /* Infrastructure */,
+				B18C77032842076200D1E688 /* Common */,
+				B18C76F12841E81F00D1E688 /* Util */,
+				B18C762328410EF100D1E688 /* VoiceNotes-Bridging-Header.h */,
+			);
+			path = VoiceNotes;
+			sourceTree = "<group>";
+		};
+		B1FDE6272840D4C700320E41 /* VoiceNotesTests */ = {
+			isa = PBXGroup;
+			children = (
+				B1B633142843E5F2000C66EC /* Presentation */,
+				B1FDE62A2840D4C700320E41 /* Info.plist */,
+			);
+			path = VoiceNotesTests;
+			sourceTree = "<group>";
+		};
+		B1FDE6322840D4C700320E41 /* VoiceNotesUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B1FDE6332840D4C700320E41 /* VoiceNotesUITests.swift */,
+				B1FDE6352840D4C700320E41 /* Info.plist */,
+			);
+			path = VoiceNotesUITests;
+			sourceTree = "<group>";
+		};
+		B1FDE6472840D5E900320E41 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				B1FDE6112840D4C500320E41 /* AppDelegate.swift */,
+				B1FDE6482840D60B00320E41 /* AppConfiguration.swift */,
+				B18C76672841298000D1E688 /* AppCoordinator.swift */,
+				B18C766F28412C3B00D1E688 /* HomeCoordinator.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B1FDE60D2840D4C500320E41 /* VoiceNotes */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B1FDE6382840D4C700320E41 /* Build configuration list for PBXNativeTarget "VoiceNotes" */;
+			buildPhases = (
+				EC9379947985F422904FF12B /* [CP] Check Pods Manifest.lock */,
+				B1FDE60A2840D4C500320E41 /* Sources */,
+				B1FDE60B2840D4C500320E41 /* Frameworks */,
+				B1FDE60C2840D4C500320E41 /* Resources */,
+				3158940B964EB45D23D30B49 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VoiceNotes;
+			productName = VoiceNotes;
+			productReference = B1FDE60E2840D4C500320E41 /* VoiceNotes.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B1FDE6232840D4C700320E41 /* VoiceNotesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B1FDE63B2840D4C700320E41 /* Build configuration list for PBXNativeTarget "VoiceNotesTests" */;
+			buildPhases = (
+				72037C8C9E0434CF6F279B1F /* [CP] Check Pods Manifest.lock */,
+				B1FDE6202840D4C700320E41 /* Sources */,
+				B1FDE6212840D4C700320E41 /* Frameworks */,
+				B1FDE6222840D4C700320E41 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B1FDE6262840D4C700320E41 /* PBXTargetDependency */,
+			);
+			name = VoiceNotesTests;
+			productName = VoiceNotesTests;
+			productReference = B1FDE6242840D4C700320E41 /* VoiceNotesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B1FDE6062840D4C500320E41 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					B1FDE60D2840D4C500320E41 = {
+						CreatedOnToolsVersion = 12.2;
+						LastSwiftMigration = 1220;
+					};
+					B1FDE6232840D4C700320E41 = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = B1FDE60D2840D4C500320E41;
+					};
+				};
+			};
+			buildConfigurationList = B1FDE6092840D4C500320E41 /* Build configuration list for PBXProject "VoiceNotes" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B1FDE6052840D4C500320E41;
+			productRefGroup = B1FDE60F2840D4C500320E41 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B1FDE60D2840D4C500320E41 /* VoiceNotes */,
+				B1FDE6232840D4C700320E41 /* VoiceNotesTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B1FDE60C2840D4C500320E41 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1FDE61E2840D4C700320E41 /* LaunchScreen.storyboard in Resources */,
+				B1FDE61B2840D4C700320E41 /* Assets.xcassets in Resources */,
+				B1FDE6192840D4C500320E41 /* HomeViewController.storyboard in Resources */,
+				B18C76ED2841E47D00D1E688 /* SpeechToTextViewController.storyboard in Resources */,
+				B1B632BB2843B829000C66EC /* VoiceNoteDetailViewController.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1FDE6222840D4C700320E41 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3158940B964EB45D23D30B49 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VoiceNotes/Pods-VoiceNotes-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VoiceNotes/Pods-VoiceNotes-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VoiceNotes/Pods-VoiceNotes-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		72037C8C9E0434CF6F279B1F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VoiceNotesTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EC9379947985F422904FF12B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VoiceNotes-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B1FDE60A2840D4C500320E41 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B18C774D28434E9E00D1E688 /* CoreDataStorage.swift in Sources */,
+				B18C772428424C2500D1E688 /* SpeechToTextViewModel.swift in Sources */,
+				B18C777C2843913100D1E688 /* HomeListItemCell.swift in Sources */,
+				B18C772F28424F8500D1E688 /* Observable.swift in Sources */,
+				B1FDE6492840D60B00320E41 /* AppConfiguration.swift in Sources */,
+				B18C77842843941C00D1E688 /* HomeViewModel.swift in Sources */,
+				B1B632A52843B2B2000C66EC /* DefaultTextToSpeechRepository.swift in Sources */,
+				B1FDE6122840D4C500320E41 /* AppDelegate.swift in Sources */,
+				B18C76682841298000D1E688 /* AppCoordinator.swift in Sources */,
+				B18C768028412DD000D1E688 /* HomeViewController.swift in Sources */,
+				B18C772A28424D5400D1E688 /* Repository.swift in Sources */,
+				B1B6329D2843B12D000C66EC /* TextToSpeechService.swift in Sources */,
+				B18C767A28412DBC00D1E688 /* SpeechToTextViewController.swift in Sources */,
+				B18C774328434DC900D1E688 /* CoreDataStorage.xcdatamodeld in Sources */,
+				B18C76FC2842070800D1E688 /* AudioService.swift in Sources */,
+				B1B632B12843B4C8000C66EC /* VoiceNoteDetailViewModel.swift in Sources */,
+				B18C773928425CB100D1E688 /* DefaultAudioRepository.swift in Sources */,
+				B18C7765284351D200D1E688 /* VoiceNote.swift in Sources */,
+				B18C773428425CA400D1E688 /* DefaultSpeechToTextRepository.swift in Sources */,
+				B1B632B62843B790000C66EC /* VoiceNoteDetailViewController.swift in Sources */,
+				B18C776D2843541C00D1E688 /* VoiceNoteEntity+Mapping.swift in Sources */,
+				B18C767028412C3B00D1E688 /* HomeCoordinator.swift in Sources */,
+				B18C763D284111C500D1E688 /* SpeechToTextService.swift in Sources */,
+				B18C76F32841E84100D1E688 /* StoryboardInstantiable.swift in Sources */,
+				B18C775C2843515300D1E688 /* CoreDataVoiceNotesStorage.swift in Sources */,
+				B18C774828434E5100D1E688 /* VoiceNotesStorage.swift in Sources */,
+				B18C777428438B2F00D1E688 /* HomeItemViewModel.swift in Sources */,
+				B18C76E22841585900D1E688 /* RecognitionConfig.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1FDE6202840D4C700320E41 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1B633012843E593000C66EC /* CoreDataStorage.swift in Sources */,
+				B1B633022843E593000C66EC /* DefaultSpeechToTextRepository.swift in Sources */,
+				B1B633082843E59A000C66EC /* RecognitionConfig.swift in Sources */,
+				B1B6330B2843E59A000C66EC /* AudioService.swift in Sources */,
+				B1B632DF2843E575000C66EC /* AppConfiguration.swift in Sources */,
+				B1B632F52843E584000C66EC /* VoiceNoteDetailViewModel.swift in Sources */,
+				B1B632EA2843E57C000C66EC /* HomeViewModel.swift in Sources */,
+				B1B632FA2843E58B000C66EC /* VoiceNote.swift in Sources */,
+				B1B6337C2843FBA6000C66EC /* SpeechToTextViewModel.swift in Sources */,
+				B1B633272843E7B2000C66EC /* SpeechToTextRepositoryMock.swift in Sources */,
+				B1B633552843EE10000C66EC /* SpeechToTextService.swift in Sources */,
+				B1B632F92843E58B000C66EC /* Repository.swift in Sources */,
+				B1B6335D2843F5FE000C66EC /* HomeViewModelTests.swift in Sources */,
+				B1B633042843E593000C66EC /* VoiceNotesStorage.swift in Sources */,
+				B1B632FF2843E593000C66EC /* DefaultTextToSpeechRepository.swift in Sources */,
+				B1B633732843F78E000C66EC /* TextToSpeechRepositoryMock.swift in Sources */,
+				B1B6336E2843F721000C66EC /* VoiceNoteDetailViewModelTests.swift in Sources */,
+				B1B633782843FB31000C66EC /* SpeechToTextViewModelTests.swift in Sources */,
+				B1B633102843E59E000C66EC /* Observable.swift in Sources */,
+				B1B633092843E59A000C66EC /* TextToSpeechService.swift in Sources */,
+				B1B632EB2843E57C000C66EC /* HomeItemViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B1FDE6262840D4C700320E41 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B1FDE60D2840D4C500320E41 /* VoiceNotes */;
+			targetProxy = B1FDE6252840D4C700320E41 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B1FDE6172840D4C500320E41 /* HomeViewController.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B1FDE6182840D4C500320E41 /* Base */,
+			);
+			name = HomeViewController.storyboard;
+			sourceTree = "<group>";
+		};
+		B1FDE61C2840D4C700320E41 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B1FDE61D2840D4C700320E41 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B1FDE6362840D4C700320E41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B1FDE6372840D4C700320E41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B1FDE6392840D4C700320E41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E141F2BC3130DB91167C67F /* Pods-VoiceNotes.debug.xcconfig */;
+			buildSettings = {
+				API_KEY = AIzaSyBQuCePIYTr_WSo601NG_nhp0O9dewxAto;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SP6AR62AWA;
+				INFOPLIST_FILE = VoiceNotes/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = nhatnt.VoiceNotes;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STT_API_BASE_URL = speech.googleapis.com;
+				SWIFT_OBJC_BRIDGING_HEADER = "VoiceNotes/VoiceNotes-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TTS_API_BASE_URL = texttospeech.googleapis.com;
+			};
+			name = Debug;
+		};
+		B1FDE63A2840D4C700320E41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8923770DF7A2B8ACD01E3B7 /* Pods-VoiceNotes.release.xcconfig */;
+			buildSettings = {
+				API_KEY = AIzaSyBQuCePIYTr_WSo601NG_nhp0O9dewxAto;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SP6AR62AWA;
+				INFOPLIST_FILE = VoiceNotes/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = nhatnt.VoiceNotes;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STT_API_BASE_URL = speech.googleapis.com;
+				SWIFT_OBJC_BRIDGING_HEADER = "VoiceNotes/VoiceNotes-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TTS_API_BASE_URL = texttospeech.googleapis.com;
+			};
+			name = Release;
+		};
+		B1FDE63C2840D4C700320E41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE43ED32E84DBBD3495A9C86 /* Pods-VoiceNotesTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SP6AR62AWA;
+				INFOPLIST_FILE = VoiceNotesTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = nhatnt.VoiceNotesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VoiceNotes.app/VoiceNotes";
+			};
+			name = Debug;
+		};
+		B1FDE63D2840D4C700320E41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F77443AE782E08172A7092D4 /* Pods-VoiceNotesTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SP6AR62AWA;
+				INFOPLIST_FILE = VoiceNotesTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = nhatnt.VoiceNotesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VoiceNotes.app/VoiceNotes";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B1FDE6092840D4C500320E41 /* Build configuration list for PBXProject "VoiceNotes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1FDE6362840D4C700320E41 /* Debug */,
+				B1FDE6372840D4C700320E41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B1FDE6382840D4C700320E41 /* Build configuration list for PBXNativeTarget "VoiceNotes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1FDE6392840D4C700320E41 /* Debug */,
+				B1FDE63A2840D4C700320E41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B1FDE63B2840D4C700320E41 /* Build configuration list for PBXNativeTarget "VoiceNotesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1FDE63C2840D4C700320E41 /* Debug */,
+				B1FDE63D2840D4C700320E41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B18C774128434DC900D1E688 /* CoreDataStorage.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B18C774228434DC900D1E688 /* VoiceNotes.xcdatamodel */,
+			);
+			currentVersion = B18C774228434DC900D1E688 /* VoiceNotes.xcdatamodel */;
+			path = CoreDataStorage.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = B1FDE6062840D4C500320E41 /* Project object */;
+}

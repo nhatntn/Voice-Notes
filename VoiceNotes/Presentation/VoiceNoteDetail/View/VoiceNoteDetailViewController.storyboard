@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kZe-F9-iYi">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Voice Note Detail View Controller-->
+        <scene sceneID="foW-Od-zT3">
+            <objects>
+                <viewController storyboardIdentifier="VoiceNoteDetailViewControllerID" useStoryboardIdentifierAsRestorationIdentifier="YES" id="kZe-F9-iYi" customClass="VoiceNoteDetailViewController" customModule="VoiceNotes" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Qba-co-Ymi">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ZE4-gq-TzN">
+                                <rect key="frame" x="10" y="54" width="394" height="688.5"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uvt-9I-yix">
+                                <rect key="frame" x="162" y="752.5" width="90" height="89.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="uvt-9I-yix" secondAttribute="height" multiplier="1:1" id="uoR-60-dj6"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="didTapPlay:" destination="kZe-F9-iYi" eventType="touchUpInside" id="7TZ-y9-idp"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="A4r-e8-ByH"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ZE4-gq-TzN" firstAttribute="top" secondItem="A4r-e8-ByH" secondAttribute="top" constant="10" id="3Ue-yX-2iw"/>
+                            <constraint firstItem="A4r-e8-ByH" firstAttribute="bottom" secondItem="uvt-9I-yix" secondAttribute="bottom" constant="20" id="Z7X-ib-EcF"/>
+                            <constraint firstItem="ZE4-gq-TzN" firstAttribute="leading" secondItem="A4r-e8-ByH" secondAttribute="leading" constant="10" id="cCF-BX-h3n"/>
+                            <constraint firstItem="uvt-9I-yix" firstAttribute="centerX" secondItem="Qba-co-Ymi" secondAttribute="centerX" id="dBZ-am-bc3"/>
+                            <constraint firstItem="A4r-e8-ByH" firstAttribute="trailing" secondItem="ZE4-gq-TzN" secondAttribute="trailing" constant="10" id="jh6-Wl-EtS"/>
+                            <constraint firstItem="uvt-9I-yix" firstAttribute="height" secondItem="Qba-co-Ymi" secondAttribute="height" multiplier="0.1" id="l1g-gV-AAR"/>
+                            <constraint firstItem="uvt-9I-yix" firstAttribute="top" secondItem="ZE4-gq-TzN" secondAttribute="bottom" constant="10" id="ydM-yi-jEy"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="buttonPlay" destination="uvt-9I-yix" id="AwI-EN-q8F"/>
+                        <outlet property="textView" destination="ZE4-gq-TzN" id="Sr8-jh-DXi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qc7-lC-D09" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-94.20289855072464" y="-220.3125"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
