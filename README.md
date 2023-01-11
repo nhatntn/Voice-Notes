@@ -1,17 +1,3 @@
-# ELSA Challenge for iOS Developers
-
-This is Elsa’s Coding Exercise. It allows Elsa to assess candidates’ ability to develop a simple app with quality code. Since it’s just a coding exercise, we value code quality above UI/UX. The UI needs to be functional, it does not need to be fancy.
-
-You can start this any time you like. Please take no more than 1 day to code. You can turn it in at any time. While you are working on this exercise, please feel free to ask questions!
-
-Please Fork this repo and submit your solution in the fork repo, then invite the following people to your repo:
-
-@loi.nguyen.elsa
-@duong.dao
-@williamhuang
-
-Happy coding!
-
 ## Problem 
 Create a Voice Note application that records audio and transcribes it to text. Location information shall be captured for each note.
 
